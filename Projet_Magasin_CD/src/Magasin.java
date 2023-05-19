@@ -68,6 +68,11 @@ public class Magasin {
         return(res);
     }
 
-    // TODO  ajouter une methode de tri
+    /**
+     * methode de tri par album
+     */
+    public void TriAlbum(){
+        throw new Error("");
 
+    }
 }

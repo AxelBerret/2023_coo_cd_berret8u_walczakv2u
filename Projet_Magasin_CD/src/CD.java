@@ -97,5 +97,11 @@ public class CD {
         return (resultat);
     }
 
-    // TODO
+    /**
+     * methode de comparaison
+     */
+    public boolean comparerCD(String cd1){
+        throw new Error("");
+
+    }
 }

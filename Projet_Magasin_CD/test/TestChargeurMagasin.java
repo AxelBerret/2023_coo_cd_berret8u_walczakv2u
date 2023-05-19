@@ -5,7 +5,6 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 
 public class TestChargeurMagasin {
-
     @Test
     public void testChargerMagasinOK() throws IOException {
         ChargeurMagasin chargeurMagasin = new ChargeurMagasin("../magasinCD donnees/musicbrain:Simple");
