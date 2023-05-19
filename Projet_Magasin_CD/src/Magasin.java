@@ -71,8 +71,19 @@ public class Magasin {
     /**
      * methode de tri par album
      */
-    public void TriAlbum(){
-        throw new Error("");
-
+    public void TriAlbums() {
+        for (int i = 0; i<this.listeCds.size(); i++) {
+            CD cds = this.listeCds.get(i);
+            int indiceSelection = i;
+            for (int j = i+1; j<this.listeCds.size(); j++) {
+                if (this.listeCds.get(j).comparerCD(cds)) {
+                    indiceSelection = j;
+                    CD cdtemp = this.listeCds.get(j);
+                    cds = cdtemp;
+                }
+            }
+            this.listeCds.set(indiceSelection, this.listeCds.get(i));
+            this.listeCds.set(i, cds);
+        }
     }
 }

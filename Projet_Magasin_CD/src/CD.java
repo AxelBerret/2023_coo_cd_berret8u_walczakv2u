@@ -100,8 +100,7 @@ public class CD {
     /**
      * methode de comparaison
      */
-    public boolean comparerCD(String cd1){
-        throw new Error("");
-
+    public boolean comparerCD(CD pCd){
+        return this.nomCD.compareTo(pCd.nomCD) < 0;
     }
 }
