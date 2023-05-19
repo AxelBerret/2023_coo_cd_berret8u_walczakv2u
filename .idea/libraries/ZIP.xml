@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ZIP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZIP/TD11_etudiant_v02_2014-2015.zip!/" />
+      <root url="jar://$PROJECT_DIR$/ZIP/musicbrainzSimple.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
