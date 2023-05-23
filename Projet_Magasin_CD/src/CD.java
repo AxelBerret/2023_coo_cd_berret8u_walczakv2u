@@ -115,11 +115,23 @@ public class CD {
         return this.nomArtiste.compareTo(pCd.nomArtiste) < 0;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNomArtiste() {
         return this.nomArtiste;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNomCD(){
         return this.nomCD;
+    }
+
+    public List<InfoPiste> getPistes() {
+        return this.pistes;
     }
 }
