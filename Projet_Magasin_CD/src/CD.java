@@ -114,4 +114,8 @@ public class CD {
     public boolean etreAvantArtiste(CD pCd) {
         return this.nomArtiste.compareTo(pCd.nomArtiste) < 0;
     }
+
+    public String getNomArtiste() {
+        return this.nomArtiste;
+    }
 }

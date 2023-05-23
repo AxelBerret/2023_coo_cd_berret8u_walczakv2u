@@ -1,7 +1,7 @@
 public interface ComparateurCd {
 
     /**
-     * 
+     *
      * @param cd1
      * @param cd2
      * @return
