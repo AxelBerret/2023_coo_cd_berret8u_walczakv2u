@@ -111,7 +111,7 @@ public class Magasin {
      *
      * @param comparateur
      */
-    public void trier(ComparateurCd comparateur) {
+    public void trier(ComparateurCd comparateur) { 
         int nbCds = this.listeCds.size();
         for (int i = 0; i<nbCds; i++) {
             CD cdSelectionne = this.listeCds.get(i);
