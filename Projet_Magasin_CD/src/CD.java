@@ -98,9 +98,20 @@ public class CD {
     }
 
     /**
-     * methode de comparaison
+     *
+     * @param pCd
+     * @return
      */
     public boolean comparerCD(CD pCd){
         return this.nomCD.compareTo(pCd.nomCD) < 0;
+    }
+
+    /**
+     *
+     * @param pCd
+     * @return
+     */
+    public boolean etreAvantArtiste(CD pCd) {
+        return this.nomArtiste.compareTo(pCd.nomArtiste) < 0;
     }
 }
