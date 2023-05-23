@@ -88,4 +88,14 @@ public class Magasin {
             this.listeCds.set(i, cdSelectionne);
         }
     }
+
+    public ArrayList<CD> chercherArtiste(String pNomArtiste) {
+        ArrayList<CD> cdArtiste = new ArrayList<CD>();
+        for (int i = 0; i<this.listeCds.size(); i++) {
+            if (this.listeCds.get(i).getNomArtiste() == pNomArtiste) {
+                cdArtiste.add(this.listeCds.get(i));
+            }
+        }
+        return cdArtiste;
+    }
 }
