@@ -118,4 +118,8 @@ public class CD {
     public String getNomArtiste() {
         return this.nomArtiste;
     }
+
+    public String getNomCD(){
+        return this.nomCD;
+    }
 }
