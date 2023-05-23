@@ -70,48 +70,9 @@ public class Magasin {
 
     /**
      *
-     */
-    public void triAlbums() {
-        for (int i = 0; i<this.listeCds.size(); i++) {
-            CD cds = this.listeCds.get(i);
-            int indiceSelection = i;
-            for (int j = i+1; j<this.listeCds.size(); j++) {
-                if (this.listeCds.get(j).comparerCD(cds)) {
-                    indiceSelection = j;
-                    CD cdtemp = this.listeCds.get(j);
-                    cds = cdtemp;
-                }
-            }
-            this.listeCds.set(indiceSelection, this.listeCds.get(i));
-            this.listeCds.set(i, cds);
-        }
-    }
-
-    /**
-     *
-     */
-    public void trierArtiste() {
-        int nbCds = this.listeCds.size();
-        for (int i = 0; i<nbCds; i++) {
-            CD cdSelectionne = this.listeCds.get(i);
-            int indiceSelection = i;
-            for (int j = i+1; j<nbCds; j++) {
-                CD cdTemp = this.listeCds.get(j);
-                if (cdTemp.etreAvantArtiste(cdSelectionne)) {
-                    indiceSelection = j;
-                    cdSelectionne = cdTemp;
-                }
-            }
-            this.listeCds.set(indiceSelection, this.listeCds.get(i));
-            this.listeCds.set(i, cdSelectionne);
-        }
-    }
-
-    /**
-     *
      * @param comparateur
      */
-    public void trier(ComparateurCd comparateur) { 
+    public void trier(ComparateurCd comparateur) {
         int nbCds = this.listeCds.size();
         for (int i = 0; i<nbCds; i++) {
             CD cdSelectionne = this.listeCds.get(i);
